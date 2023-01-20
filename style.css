@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.first-circle {
+  width: 320px;
+  height: 320px;
+  border: 3px solid yellow;
+  border-radius: 50%;
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.circle {
+  border: 3px solid #ffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  animation-name: circle-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  top: 135px;
+  left: 133px;
+}
+.second-circle {
+  width: 120px;
+  height: 120px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+@keyframes circle-animation {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
